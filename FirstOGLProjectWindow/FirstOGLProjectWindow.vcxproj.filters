@@ -16,13 +16,29 @@
     <Filter Include="src">
       <UniqueIdentifier>{e2f1d534-2ddc-45bf-ac35-50af3c6c9e20}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{438c6efd-d874-4ed3-a7c8-5132444b2873}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\ThirdPartyInitialDownloads\gladdotc\glad.c">
-      <Filter>Source Files</Filter>
+      <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="fragment_shader.glsl">
+      <Filter>Shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="vertex_shader.glsl">
+      <Filter>Shaders</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ShaderLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
